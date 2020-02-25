@@ -1,0 +1,19 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.4"
+  },
+  "scripts": {
+    "start": "tsc && node build/index.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
