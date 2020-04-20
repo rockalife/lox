@@ -6,19 +6,18 @@ on:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x]
-
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - run: npm ci
-    - run: npm test
+    - run: |
+        cd ts
+        npm ci
+    - name: Test
+      run: |
+        cd ts
+        npm test
       env:
         CI: true
