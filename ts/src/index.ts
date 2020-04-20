@@ -1,1 +1,4 @@
-console.log("Hello from TSLox");
+import { Lox } from "./Lox";
+
+// start the interpreter
+Lox.main();
